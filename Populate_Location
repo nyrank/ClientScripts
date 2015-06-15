@@ -1,0 +1,5 @@
+//I created an onChange client script on the caller field for the caller app to auto-populate the location
+
+var loc = g_form.getReference('caller_id');
+ah = loc.location;
+g_form.setValue('location', ah);
