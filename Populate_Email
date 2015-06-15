@@ -1,0 +1,9 @@
+//Populate email address on string field (u_email)
+
+
+var dep = g_form.getReference('caller_id');
+v = dep.email;
+g_form.setValue('u_email', v);
+
+
+
