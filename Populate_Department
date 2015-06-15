@@ -1,0 +1,7 @@
+//Populate department ref field (cmn_department)
+
+var dep = g_form.getReference('caller_id');
+v = dep.department;
+g_form.setValue('u_DepartmentID', v);
+
+
