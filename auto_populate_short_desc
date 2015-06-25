@@ -1,0 +1,23 @@
+//Auto populate the "short description" field based on choice list option
+//This script was used on the caller app
+
+function onChange(control, oldValue, newValue, isLoading) {
+ 
+  switch (newValue) {
+    case "hang_up":
+      g_form.setValue('short_description', 'Hang Up Call');
+      break;
+    case "status_call":
+      g_form.setValue('short_description', 'Ticket Status Call');
+      break;
+    case "general_inquiry":
+      g_form.setValue('short_description', 'Non-IT Call (Sales Call or Telemarketer');
+      break;
+    case "wrong_number":
+      g_form.setValue('short_description', 'Wrong Number');
+      break;
+    case "incident":
+      g_form.setValue('short_description', '');
+      break;
+  }
+}
