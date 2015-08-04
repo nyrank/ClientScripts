@@ -1,0 +1,6 @@
+//This script makes the label of a particular field (in this case, Short Description on the Incident Table) bold.
+
+function onLoad() {
+ var l = g_form.getLabel('incident.short_description');
+ 
+l.style.fontWeight='bold'; }
