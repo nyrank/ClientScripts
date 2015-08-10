@@ -1,0 +1,21 @@
+
+//Remove the 'Closed' state option if the user is not an admin and state is not 'Closed'
+function onLoad() {
+   var isAdmin = g_user.hasRole('admin');
+   var state = g_form.getValue('state');
+   if (!isAdmin && (state != 7)){
+      //alert('Current user is not an admin');
+      g_form.removeOption('state', '7');
+   }
+}
+
+
+
+
+
+
+
+http://www.servicenowguru.com/scripting/client-scripts-scripting/removing-disabling-choice-list-options/
+
+
+
