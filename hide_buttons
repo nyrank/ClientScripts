@@ -1,0 +1,14 @@
+//set read only state and hide buttons
+
+function onLoad() {
+   //Set the incident state to Resolved
+   g_form.setValue('state', 6);
+   g_form.setReadonly('state', 'true');
+
+   //Remove all buttons except for the 'Update' button
+   var items = $$('BUTTON').each(function(item){
+      if(item.id != 'sysverb_update'){
+         item.hide();   
+      }
+   });
+}
